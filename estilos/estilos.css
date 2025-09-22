@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wdth,wght@75..100,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  /* VARIABLES GLOBALES */
+
+  /* COLORES */
+  --morado-profundo: #393083;
+  --azul-oscuro: #0D3997;
+  --celeste-claro: #A6D9F8;
+  --rosa-claro: #FDA2F2;
+  --lila: #B189F5;
+
+  /* ESCALA TIPOGRÁFICA */
+  --h1: 48px;
+  --h2: 40px;
+  --h3: 33px;
+  --h4: 28px;
+  --h5: 23px;
+  --h6: 19px;
+  --p: 16px;
+  --sm: 13px;
+  --xsm: 11px;
+
+  /* TIPOGRAFÍAS */
+  --font-heading: "Rubik", sans-serif;
+  --font-body: "DynaPuff", system-ui;
+
+  /* ESPACIADORES */
+  --padding-1: 14px;
+  --padding-2: 42px; /* 3 x PADDING-1 */
+  --gap-1: 10px;
+}
+
+
+/*RESETEO:*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+/* SELECTOR DE ETIQUETA: */
+
+body{
+    background: linear-gradient(111deg, #24077C 15.05%, #131318 52.66%, #03107C 90.27%);
+    font-family: "Rubik", sans-serif;
+}
+h1{
+font-family: var(--font-body);
+font-size: var(--h1);
+font-weight: 700;
+
+}
+h2{
+font-family: var(--sans-serif);
+font-size: var(--h2);
+font-weight: 700;
+}
+h3{
+font-family: var(--sans-serif);
+font-size: var(--h3);
+font-weight: 700;
+}
+h4{
+font-family: var(--sans-serif);
+font-size: var(--h4);
+font-weight: 400;
+text-transform: uppercase;
+}
+h5{
+    font-family: var(--sans-serif);
+font-size: var(--h5);
+font-weight: 400;
+text-transform: uppercase;
+}
+h6{
+font-family: var(--sans-serif);
+font-size: var(--h6);
+font-weight: 400;
+text-transform: uppercase;
+}
+p{
+    font-family: var(--sans-serif);
+    font-size: var(--p);
+    font-weight: 400;
+}
+
+.sm{
+font-family: var(--sans-serif);
+font-size: var(--sm);
+font-weight: 400;
+text-transform: uppercase;
+
+}
+.xsm{
+    font-family: var(--sans-serif);
+font-size: var(--xsm);
+font-weight: 400;
+text-transform: uppercase;
+}
+.italic{
+font-style:italic;
+}
+.bold{
+font-weight: 700;
+}
+
+
+/* SELECTOR DE CLASE*/
+.contenedor{
+    width: 80%;
+    margin:0 auto;
+    
+}
+/*HEADER */
+
+header{
+    display: flex;
+    justify-content:space-between;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap:var(--gap-1);
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding:var(--padding-1);
+    border-radius:4px;
+}
+header nav ul li a:hover{
+    background-color: white;
+}
+
+/*FIN DEL HEADER */
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding:var(--padding-2) var(--padding-1);
+    background-color: var(--morado-claro);
+    color: var(--morado-profundo);
+}
+footer p a{
+    text-decoration: none;
+    color: var(--morado);
+}
+footer nav{}
+footer nav ul{
+    display: flex;
+    gap:var(--gap-1);
+    list-style: none;
+}
+footer nav ul li{}
+footer nav ul li a{
+    text-decoration: none;
+    color: var(--celeste-cielo);
+}
+
+/*FIN DEL FOOTER*/
+
+
+span{
+    background-color:orange;
+}
+.rojo{
+    background-color: red;
+}
+.mayusculas{
+    text-transform: uppercase;
+}
+/* FIN DEL FOOTER */
+
+/*SELECTOR DE IDENTIDAD*/
+#unico{
+    background-color:green;
+}
+
+/* MODELO DE CAJA DENTRO DE IDEAS.HTML*/
+
+.contenido{
+    border-top: 3px solid #f43;
+    border-bottom:10px double rgb(67, 200, 10);
+    border-radius:10px;
+    border-top-right-radius: 100px;
+    background-color: azure;
+    box-shadow:10px -10px 20px rgba(0, 0, 0,0.2);
+
+    
+    
+    /* LOS VALORES EN CSS PUEDEN SER RELATIVOS O ABSOLUTOS*/
+    width:600px;
+    height:auto;
+    margin:0 auto;
+    padding:40px;
+
+}
+/*SELECTOR COMPUESTO */
+.contenido h2{
+    background-color:red;
+    margin-bottom: 20px;
+}
+.contenido p{
+    margin: 0 20px 20px 60px;
+}
+.contenido a{
+    background: grey;
+    display:block;
+    text-align:center;
+    border-radius:8px;
+    padding:12px 16px;
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 250px;
+    margin:0 auto 20px auto;
+}
+/* PSEUDO CLASE: HOVER*/
+
+.contenido a:hover{
+    background-color:blue;
+}
+ .ejemplo{
+    padding: 10px;
+    border: 1px solid #000; 
+    display:flex;
+    justify-content:space-around;
+}
+ .ejemplo div{
+    flex-grow:1;
+    height: 100px;
+    background: purple;
+    border: 1px solid #1f0031;
+    color:white;
+    text-align: center;
+    padding-top:40px
+}
+.ejemplo div:nth-child(2){
+    flex-grow: 2;
+}
+
+/*INDEX.HTML*/
+
+/*HERO*/
+.hero{
+    position: relative;
+    /*
+STATIC
+RELATIVE
+ABSOLUTE (TIENE UNA RELACIÓN CON EL FLUJO NORMAL, SI SU PADRE ES DE POSICIÓN
+RELATIVA)
+FIXED
+
+TOP - LEFT - BOTTOM - RIGHT
+
+*/
+}
+
