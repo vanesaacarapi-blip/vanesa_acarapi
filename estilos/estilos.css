@@ -247,3 +247,31 @@ span { background-color: orange; }
   font-size: var(--h4);
   margin-top: 20px;
 }
+
+.timeline {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.item img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.item.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.item.right img {
+  margin-left: 15px;
+  margin-right: 0;
+}
